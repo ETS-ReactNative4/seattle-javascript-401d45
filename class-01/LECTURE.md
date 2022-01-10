@@ -4,15 +4,15 @@
 
 ### Canvas
 
-  * What is due everyday?
-    * Reading
-    * Lab (Except for Friday)
-    * Code Challenge
-    * Learning Journal
-  * What is due every week?
-    * Feedback
-    * Career Coaching Workshop
-    * Data Structure Implementation
+* What is due everyday?
+  * Reading
+  * Lab (Except for Friday)
+  * Code Challenge
+  * Learning Journal
+* What is due every week?
+  * Feedback
+  * Career Coaching Workshop
+  * Data Structure Implementation
 
 Please DM me / let me know if you are Canvas Problems.
 
@@ -44,7 +44,7 @@ This course requires that you break abstract problems down to into specific deta
    * render data to a webpage.
 4. Write syntatically correct Code.
 
-
+![whiteboard example](/assets/whiteboard.png)
 
 Every thursday's Code Challenge is meant to be done only on a "whiteboard"
 
