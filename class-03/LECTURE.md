@@ -20,13 +20,15 @@ describe('testing the logger', () => {
 ```
 
 Lab Requirements:
-  * 1 route: GET /person
-    * query string of 'name' on the request
-      * if present, return the name as JSON: `{name: 'NAME_GIVEN' }` (200 response)
-      * if name is not present, return a 500 status response.
-      * if route / method don't match, return a 404.
+* 1 route: GET /person
+  * query string of 'name' on the request
+    * if present, return the name as JSON: `{name: 'NAME_GIVEN' }` (200 response)
+    * if name is not present, return a 500 status response.
+    * if route / method don't match, return a 404.
 
 
 ## RESTful Web Services
+
+[Whiteboard UML](https://projects.invisionapp.com/freehand/document/wVDlxDWOt?saveDraft=true)
 
 ## CRUD with Sequelize
