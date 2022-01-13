@@ -29,4 +29,10 @@ describe('Testing the Collection module data storage', () => {
     let messages = await MessageCollection.read();
     expect(messages.length).toEqual(1);
   });
+
+  it('should read from message and include an author', async () => {
+    let messages = await MessageCollection.read(null, AuthorCollection.model);
+    expect(messages[0].Author).toBeDefined();
+    expect(messages[0].Author.name).toEqual('Jacob');
+  });
 });

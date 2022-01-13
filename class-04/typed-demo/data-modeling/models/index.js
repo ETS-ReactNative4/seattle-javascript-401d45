@@ -4,7 +4,6 @@ const { Sequelize, DataTypes } = require('sequelize');
 const DATABASE_URL = process.env.DATABASE_URL || 'sqlite:memory';
 
 const Collection = require('./Collection.js');
-
 const messageSchema = require('./message.schema.js');
 const authorSchema = require('./author.schema.js');
 
