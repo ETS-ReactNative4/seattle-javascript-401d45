@@ -9,7 +9,7 @@ Your team needs to complete the **`squiseaudart`** feature.  In order to complet
 1. Create a **`squiseaudart`** Model with **Sequelize**
     * Define any and all properties belonging to a **`squiseaudart`**.  Be creative!
     * Configure and export your `Sequelize.Model`.
-2. Create an **Express Router** that handle Client Requests send to `/squiseaudart` for all CRUD operations.
+2. Create an **Express Router** that handle Client Requests sent to `/squiseaudart` for all CRUD operations.
     * Create a `GET` method that can `read` records from your database.
     * Create a `POST` method that can `create` a record from your database.
     * Create a `PUT`/`PATCH` method that can `update` a record from your database
