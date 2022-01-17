@@ -92,3 +92,5 @@ Encypting - Hiding of information and making it hard to read.
 ## Basic Authentication
 
 Authentication using strings (username plus password).
+
+![whiteboard](./assets/UML.png)
