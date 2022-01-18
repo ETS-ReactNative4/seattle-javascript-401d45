@@ -30,3 +30,5 @@ let User = await Users.create(username, password);
 User.token // returns a property derived from stored data == iuasdhfiluashdf.982374987245 
 
 ```
+
+![Bearer Auth](./assets/bearer-UML.png)
