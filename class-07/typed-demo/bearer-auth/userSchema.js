@@ -38,8 +38,16 @@ const UserSchema = (sequelize, DataTypes) => {
     }
   };
 
-  model.authenticateBearer =  async function (token) {
+  model.authenticateToken = async function (token) {
+    let payload = jwt.verify(token, APP_SECRET);
+    console.log(payload);
+    const user = await this.findOne({where: { username: payload.username }});
 
+    if (user) {
+      return user;
+    } else {
+      throw new Error('Invalid User');
+    }
   };
 
   return model;
