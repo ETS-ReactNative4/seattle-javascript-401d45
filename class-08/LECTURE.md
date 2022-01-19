@@ -28,9 +28,9 @@ Today, we still need our basic and bearer auth to work together.
 
 Each user on our system currently has
 
-* username
-* password
-* token
+* username: string that represents a unique user.
+* password: string that contains encrypted password.
+* token: virtual token get with a username payload.
 * role: for your system, how many types are required.
   * Admins that can do anything.
   * manager: `create` `read` `update` but not delete.
