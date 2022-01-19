@@ -16,7 +16,6 @@ If `basic` auth uses strings, `bearer` is designed to use a token.
     * We get to decide what information is encoded.
   * Each token is signed with a secret string.
 
-
 ### Sequelize Virtual property
 
 * A property that is not stored in our SQL table.
