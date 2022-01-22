@@ -40,3 +40,8 @@ Your team grade is based on the following factors:
 1. % of the application that was completed
 1. Code Quality
 1. Presentation
+
+## Submission
+
+1. Submit a link to your group github Repo.
+2. Add a comment about what parts of the project you worked on.  Include any additional information for the instructional team that you would like taken into account for grading.
