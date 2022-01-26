@@ -56,3 +56,22 @@ function reverse(linkedlist) {
   * Websocket (socket.io-client) can be leveraged in the browser
   * socket.io (socket.io server) can be leveraged within Node to configure event pool.
   * HTTP servers can be depl;oyed to handle discreet between a client and server.
+
+## Jest Testing
+
+What is Jest?
+
+* libary that creates a self contained testing environment.
+
+```bash
+# Start a node runtime environment
+> node 
+# process
+# require('events'); 
+
+# Start a jest runtime environment
+> jest 
+# jest
+# expect()
+
+```
