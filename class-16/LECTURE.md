@@ -117,7 +117,7 @@ Using the AWS Elastic Beanstalk GUI:
 
 1. Once it's installed, follow the link given to see the running server output in your browser.
 1. Go to the EC2 page, you'll see that it's created an instance for you.
-![Elastic GUI](/assets/eb-gui.png)
+![Elastic GUI](./assets/eb-gui.png)
 
 - NOTE:  The above image may have options that are not available or are deprecated, please make sure you are adding the recommended setting from AWS.
 
