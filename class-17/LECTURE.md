@@ -4,10 +4,10 @@
 
 Prompt: Given a Binary Search Tree of Integers, return an iterable of all the integers from lowest to highest.
 
-* What methods do we have access to: only adding.
-* Is an array okay: yes, an array is an iterable.
-* BST: already sorted.
-* any data structure limits: no restrictions on Data Structures.
+- What methods do we have access to: only adding.
+- Is an array okay: yes, an array is an iterable.
+- BST: already sorted.
+- any data structure limits: no restrictions on Data Structures.
 
 ```javascript
 
@@ -58,66 +58,68 @@ function inOrder(root, cb) {
 }
 ```
 
-* Thanks Scott for walking us through this solution!
-* See Warm Up file for cleaned up solution.
+- Thanks Scott for walking us through this solution!
+- See Warm Up file for cleaned up solution.
 
 ## Review (20 mins)
 
-* Lots of options!  Some are required, some are optional.
-* Errors from elastic beanstalk
-  * `auto-scaling` and `load-balancing`.
-  * Assume these are features configured by AWS.
-* Installing `eb` cli.
-  * Installing `eb` from source.
-  * Reverting to `brew install awsebcli`.
-* Error: failed to create a `procfile`.
-  * Showed up in the terminal using eb-cli.
-    * The procfile is used to tell our server what commands it should use to run our applications.
-    * We typically use an npm script to tell automation what to do: `npm start: node index.js`.
+- Lots of options!  Some are required, some are optional.
+- Errors from elastic beanstalk
+  - `auto-scaling` and `load-balancing`.
+  - Assume these are features configured by AWS.
+- Installing `eb` cli.
+  - Installing `eb` from source.
+  - Reverting to `brew install awsebcli`.
+- Error: failed to create a `procfile`.
+  - Showed up in the terminal using eb-cli.
+    - The procfile is used to tell our server what commands it should use to run our applications.
+    - We typically use an npm script to tell automation what to do: `npm start: node index.js`.
 
-* EC2: Amazons virtual machine service.
-  * Virtual Machine: An instance of an operating system running on a physical machine.
-    * Contained within another operating system.
-    * The higher level operating system provisions some resources.
-* Elastic Beanstalk: Wrapper around the EC2 instance.
-  * Handles the configuration of an EC2 instance.
-  * Specifically for a Web Service.
-  * What is an elastic beanstalk environment?
-    * The configuration for the system that app is running on.
+- EC2: Amazons virtual machine service.
+  - Virtual Machine: An instance of an operating system running on a physical machine.
+    - Contained within another operating system.
+    - The higher level operating system provisions some resources.
+- Elastic Beanstalk: Wrapper around the EC2 instance.
+  - Handles the configuration of an EC2 instance.
+  - Specifically for a Web Service.
+  - What is an elastic beanstalk environment?
+    - The configuration for the system that app is running on.
 
 ## Serverless Infrastucture (1 hour)
 
 What is a serverless infrastrcuture, Jacob thinks it should be called serverfull.  I think micro server is a much better term.
 
-* We are removing monolithic servers.
-  * Very large Code Bases.
-  * These are hard to manage.
-* Let's get rid of these huge servers, and just have the smallest server / service possible.
-  * Our functionality will be expressed as minimally.
-    * Run a function, triggered by in variuos ways, but always does 1 very specific job.
+- We are removing monolithic servers.
+  - Very large Code Bases.
+  - These are hard to manage.
+- Let's get rid of these huge servers, and just have the smallest server / service possible.
+  - Our functionality will be expressed as minimally.
+    - Run a function, triggered by in variuos ways, but always does 1 very specific job.
 
 ### S3 (simple storage service) (30 mins)
 
-* A repository for anything "bucket".
-  * Built for programatic access(reading and writing) by both humans and machines.
-  * Very cost effective, you only pay for reads.
-* Why not use a DB.
-  * Dbs are only good for scalar (immutales)
-    * strings
-    * numbers
-    * booleans
+- A repository for anything "bucket".
+  - Built for programatic access(reading and writing) by both humans and machines.
+  - Very cost effective, you only pay for reads.
+- Why not use a DB.
+  - Dbs are only good for scalar (immutales)
+    - strings
+    - numbers
+    - booleans
 
 ### Lambda (micro "servers") (30 mins)
 
-* Micro Server function that run in response to "something".
-* Triggering our Lambda from s3
+- Micro Server function that run in response to "something".
+- Triggering our Lambda from s3
 
 1. Create the Bucket / (create a lambda if not created).
 1. Add the trigger from Lambda
-  - Maybe add the `images/` prefix, so only things added to images trigger our lambda.
+  
+- Maybe add the `images/` prefix, so only things added to images trigger our lambda.
+
 1. Create a test event to debug your lambda.
-  - Make sure you can read the object from s3.
+
+- Make sure you can read the object from s3.
+  
 1. Add an image to the images folder
 1. Check your logs to validate that the image name is present in the logs.
-
-$$
