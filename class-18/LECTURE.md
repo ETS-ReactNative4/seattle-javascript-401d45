@@ -86,12 +86,20 @@ Lab Requirements:
 
 ## API Gateway (30 mins)
 
+AWS service for HTTP endpoints
+
 ### Integration with Lambdas
+
+- Configure `Resources` and `Methods` of you API to lambda function.
+  - In order to read HTTP request data, your endpoint should proxy the request object onto the lambda event.
 
 ## Dynamo DB (30 mins)
 
 - No SQL
+- Allows cloud storage of scalar values (strings, number, booleans)
 
 ### Dynamoose
 
-- ORM
+- ORM Library for accessing our DynamoDB Table.
+
+![RESTful AWS Service](./assets/UML.png)
