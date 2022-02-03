@@ -10,7 +10,6 @@
   * traverse over the the list.
   * push all the values into the stack
     * stack now pop in reverse order!!
-* visual
 
 ```javascript
 

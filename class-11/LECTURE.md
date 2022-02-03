@@ -13,7 +13,7 @@
     * Spend more time between the 2 ( more equitable breakdown ).
     * Reviewing the video (bring back moments from previous classes).
     * More engaging drawings / same drawings day after day. Revisit as needed.
-      * Class vote on what needs revisting.
+      * Class vote on what needs revisiting.
   * Course is extremely difficult / lots of coursework / disorganized feeling.
     * I / Code Fellows want you to struggle.
     * Working on getting class to end right at 12:00.
@@ -31,6 +31,7 @@
     * Having to wait a few days for assignments.
   * Nuances feedback
     * Certain assignments require more feedback (Everything that's not code).
+  * Set up an hour each day, to address concerns / add a time for in-depth discussion.
 
 ## Auth API Presentations
 
@@ -48,17 +49,20 @@ Team 2: Erik, Steve, Matt, and Spencer
   * great UML / great related data.
 
 Team 1: Daniel, Jacob, Michael Hendricks, Ryan
-  * Simple Message Tracker
-    * Admin user to delete users.
-    * Time intensive.
+
+* Simple Message Tracker
+  * Admin user to delete users.
+  * Time intensive.
 
 Team 4:  Andrew, Kellen, and Dario
-  * Role based access to quotes.
-  * Full CRUD!!
-    * Great responses and tests.
+
+* Role based access to quotes.
+* Full CRUD!!
+  * Great responses and tests.
 
 Team 5: Blog / social media app, only got to auth.
-  * Way to fail gracefully.
+
+* Way to fail gracefully.
 
 Great job proritizing the backend!!
 
@@ -100,5 +104,6 @@ Where we're headed:
 ## DEMO: Node Events Module
 
 Built in utility to allow other modules to talk to another.
-  * Allows us to implement pub/sub behavior.
-  * Order in which events occur will not change.
+
+* Allows us to implement pub/sub behavior.
+* Order in which events occur will not change.

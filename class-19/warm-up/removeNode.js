@@ -27,11 +27,12 @@ class LinkedList {
 }
 
 let list = new LinkedList();
-let nodeToRemove = new Node(14);
+let nodeToRemove = new Node(30);
 
 list.head = new Node(20);
-list.head.next = nodeToRemove;
-list.head.next.next = new Node(30);
+list.head.next =  new Node(14);
+list.head.next.next = nodeToRemove;
+list.head.next.next.next = new Node(13);
 
 console.log(JSON.stringify(list));
 removeNode(nodeToRemove);
