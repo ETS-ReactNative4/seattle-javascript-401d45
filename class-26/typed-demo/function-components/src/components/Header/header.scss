@@ -1,0 +1,25 @@
+$background-color: red; // sass varaible
+$text-color: yellow;
+
+// mixins let you define re-usable blocks
+@mixin theme($background: pink) {
+  background-color: $background;
+  color: darkturquoise;
+}
+
+
+#header {
+  font-size: 200px;
+  background-color: $background-color;
+
+  // sass lets us nest styled blocks!
+  p {
+    color: $text-color;
+    background-color: $background-color;
+  }
+}
+
+p {
+  @include theme
+}
+
