@@ -48,7 +48,7 @@ Actions are always plain objects with 2 keys: `type` and `payload`
 
 The "type" must match a handler in the reducer function...
 
-```json
+```javascript
 {
   type: 'ADD_CHARACTER'
   payload: { name: "Cookie Monster", color: "blue", age: 57 }
