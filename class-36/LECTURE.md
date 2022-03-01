@@ -61,8 +61,9 @@ describe('testing Auth Provider Behavior', () => {
 ## Global Application State (40 mins)
 
 Last week the focus was on specific features that ideally only a subset of components use
-  - Authentication: only auth components need to consume these values / behaviors/
-  - Settings and theme: only styled conmponents or menus and dashboards.
+
+- Authentication: only auth components need to consume these values / behaviors/
+- Settings and theme: only styled conmponents or menus and dashboards.
 
 Redux is designed to be a system that potentially all parts of our UI need.
 
