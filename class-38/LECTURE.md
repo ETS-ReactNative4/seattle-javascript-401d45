@@ -17,8 +17,10 @@ Prompt: Creating a function that can duplicate a linked list. (given the head no
 
 ## Redux Middleware
 
-refers to functions, that run between the actions being dispatch, and the action object hitting our reducer.
+refers to functions, that run between the actions being executed from our components, and the action object hitting our reducer.
 
 ## Redux Thunk
+
+![Redux Thunk Middleware](/assets/uml-thunk.png)
 
 ### Why is asychronicity a problem for Redux
