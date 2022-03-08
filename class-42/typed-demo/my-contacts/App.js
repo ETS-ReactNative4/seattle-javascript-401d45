@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
 // all our "elements" in React Native need to come from 'react-native' or a third part library for react native.
-import { Button, FlatList, Linking } from 'react-native';
+import { Linking } from 'react-native';
 import { NativeBaseProvider, Box } from 'native-base';
 import * as Contacts from 'expo-contacts'; // there is no default export from expo-contacts
+import ContactsList from './components/Contacts-list';
+import Footer from './components/Footer';
+import Header from './components/Header';
 
 // let read the contacts from our phone and make phone calls.
 export default function App() {
@@ -35,15 +37,13 @@ export default function App() {
 
   return (
     <NativeBaseProvider>
-      <Box>
-        <FlatList
-          data={contacts}
-          keyExtractor={contact => contact.id}
-          renderItem={({ item }) => {
-            return <Button title={item.name} onPress={() => call(item)} />;
-          }}
+      <Box flex={1}>
+        <Header />
+        <ContactsList
+          contacts={contacts}
+          call={call}
         />
-        <StatusBar style="auto" />
+        <Footer />
       </Box>
     </NativeBaseProvider>
   );
