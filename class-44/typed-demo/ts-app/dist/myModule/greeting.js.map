@@ -1,0 +1,1 @@
+{"version":3,"file":"greeting.js","sourceRoot":"","sources":["../../src/myModule/greeting.ts"],"names":[],"mappings":";;;AAKA,SAAgB,KAAK,CAAC,IAAU;IAC9B,OAAO,aAAa,IAAI,CAAC,IAAI,EAAE,CAAC;AAClC,CAAC;AAFD,sBAEC;AAED,SAAgB,cAAc,CAAC,KAAkB;IAC/C,KAAK,IAAI,IAAI,IAAI,KAAK,EAAE;QACtB,OAAO,CAAC,GAAG,CAAC,SAAS,IAAI,CAAC,IAAI,EAAE,CAAC,CAAC;KACnC;AACH,CAAC;AAJD,wCAIC"}
